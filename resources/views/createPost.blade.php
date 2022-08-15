@@ -5,7 +5,7 @@
 
 @section('createpost')
     @auth
-        <img src="{{ asset('img/logo_big_data_white.png') }}" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
+        <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
         <div class="postDetailsBox">
             <br>
             <h1 class="title_header"><strong> Create your own post </strong></h1>
@@ -37,7 +37,7 @@
     @guest
 
         <div class="createGuest">
-            <img src="{{ asset('img/logo_big_data_white.png') }}" class="img-fluid rounded mx-auto d-block"
+            <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block"
                 alt="Responsive image">
             {{-- <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}" --}}
             {{-- class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image"> --}}

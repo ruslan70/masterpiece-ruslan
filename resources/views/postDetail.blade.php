@@ -39,7 +39,7 @@
     @endauth
     </section>
 
-    <h3 class="title_header">THOUGHTS</h3>
+    <h3 class="title_header">DEINE GEDANKEN</h3>
 
     <section class="postDetailsBox">
 

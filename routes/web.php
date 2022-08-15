@@ -33,8 +33,8 @@ Route::get('/editcomment', function () {
 //     return view('postDetail');
 // });
 
-Route::get('/aboutus', function () {
-    return view('aboutUs');
+Route::get('/aboutme', function () {
+    return view('aboutMe');
 });
 
 Route::get('/dashboard', function () {

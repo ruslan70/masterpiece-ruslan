@@ -4,16 +4,16 @@
 @section('header')
     <header>
 
-        <img src="{{ asset('img/logo_big_data_white.png') }}" class="img-fluid rounded mx-auto d-block"
+        <img src="{{ asset('img/foto-ruslan-2.png') }}" class="img-fluid rounded mx-auto d-block"
             alt="Responsive image">
 
-        <h1 class="title_header">Big Data: Nach dem Hype ist vor der Chance</h1>
+        <h1 class="title_header">Hallo, ich bin Ruslan Khatuev,<br> Web Developer aus Zürich</h1>
 
-        <p class="pMain">Der Begriff „Big Data“ bezeichnet die große Menge an strukturierten und unstrukturierten Daten, die
-            Unternehmen Tag für Tag überschwemmen. Nicht die Daten selbst sind so wichtig. Was zählt, ist das, was
-            Unternehmen mit den Daten machen. Große Datenmengen können analysiert werden, um Erkenntnisse zu gewinnen
-            und
-            auf deren Grundlage bessere Entscheidungen zu treffen und das Unternehmen strategisch auszurichten.</p>
+        <p class="pMain">Als Flüchtling in die Schweiz gekommen,
+            konnte ich nicht auf meinem ursprünglichen Beruf als Mediziner arbeiten 
+            und habe mich daher gründlich neu orientiert. 
+            In einem herausfordernden Prozess und durch verschiedene gemeinnützige Tätigkeiten 
+            durfte ich insbesondere meine Fähigkeiten im Umgang mit Menschen unterschiedlicher Herkunft und verschiedenen Alters entdecken. </p>
 
     </header>
 @endsection

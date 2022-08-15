@@ -1,5 +1,11 @@
+@extends ('layouts/master')
+
+@section ('login')
 <x-guest-layout>
+    {{-- <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block"
+        alt="Responsive image"> --}}
     <x-auth-card>
+        
         <x-slot name="logo">
             <a href="/">
                 <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
@@ -54,3 +60,4 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
+@endsection

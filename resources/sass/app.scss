@@ -1,13 +1,241 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,500&display=swap");
 
 // Variables
-@import 'variables';
+@import "variables";
+// Icons
+// @import "~mdb-ui-kit/css/mdb.min.css";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-// Just testing
-.red {
-    background-color: rgb(104, 78, 237) !important;
+.nav_text {
+    text-transform: uppercase;
+    font-family: $titlesFont;
+    font-weight: $titleWeight;
+    color: $textColor;
+}
+.nav_color {
+    background-color: $navColor;
+}
+
+.body_color {
+    background-color: $backgroundColor;
+    // min-height: 90vh;
+}
+
+.bodyIMG{
+    background-image: url('/img/template1_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerFix {
+    margin-top: auto;
+}
+
+.title_header {
+    color: $textColor;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0.5rem;
+    font-family: $titlesFont;
+}
+.pMain {
+    color: $textColor;
+    font-size: 3vw;
+    text-align: justify;
+    padding: 0.5rem;
+    margin: 1rem;
+    font-family: $contentFont;
+}
+
+.post_bbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardedit {
+    background-color: $backgroundColor;
+}
+.cardBoxStyle {
+    margin: 0.5rem;
+    width: 21rem;
+}
+.cTextElip {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.buttonCustom {
+    background-color: $buttonColor;
+    margin-top: 0.5rem;
+    max-width: 30vw
+}
+.cardTitle {
+    font-weight: $titleWeight;
+}
+
+.footerMtop {
+    margin-top: 3rem;
+}
+
+.postDetailsBox {
+    width: 90vw;
+    margin: auto;
+}
+
+.ul_comments {
+    // margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+}
+
+.aYd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.liComment {
+    color: $textColor;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    font-family: $contentFont;
+}
+
+.liauthor{
+    @extend .liComment;
+    font-style: italic;
+}
+
+.createGuest{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// BREEZE CLASS
+.text-white {
+    color: $textColor;
+}
+.buttonColor {
+    background-color: $buttonColor;
+}
+
+.bgImg {
+    background-image: url("/public/img/template1_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+// NINA CLASS
+
+.wir {
+    color: rgb(10, 71, 77);
+    font-size: 1.8vw;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.wir_1 {
+    color: rgb(10, 71, 77);
+    font-size: 1.8vw;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.row {
+    color: $textColor;
+    font-size: 1.8vw;
+    text-align: left;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.title-Wichtig {
+    color: rgb(10, 71, 77);
+    font-size: 1.8vw;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 3rem;
+    font-family: $contentFont;
+}
+
+.imgSize{
+    height: 20vh;
+}
+
+/* Desktop adjustments*/
+@media screen and (min-width: 992px) {
+    .pMain {
+        color: $textColor;
+        font-size: 1.8vw;
+        text-align: justify;
+        padding: 0.5rem;
+        margin: 3rem;
+        font-family: $contentFont;
+    }
+
+    .cardBoxStyle {
+        margin: 0.5rem;
+        width: 23vw;
+        height: auto;
+    }
+
+    .postDetailsBox {
+        width: 70vw;
+        margin: auto;
+    }
+
+    .img-fluid {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .title_header {
+        margin-top: 3rem;
+        color: $textColor;
+        font-size: 3vw;
+        text-align: center;
+        padding: 0.5rem;
+        font-family: $titlesFont;
+    }
+    .liComment {
+        color: $textColor;
+        font-size: 2vw;
+        text-align: left;
+        padding: 0.1rem;
+        margin: 0.5rem;
+        font-family: $contentFont;
+    }
+    .ul_comments {
+        // margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: left;
+    }
+    .form-label {
+        font-size: 2rem;
+    }
+    .imgSize{
+        height: 25vh;
+    }
+}
+
+@media screen and (min-width: 994px) and (max-width: 1190px) {
+    .imgSize {
+        height: 21vh;
+    }
 }
