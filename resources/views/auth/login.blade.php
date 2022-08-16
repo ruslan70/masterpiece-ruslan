@@ -2,7 +2,7 @@
 
 @section ('login')
 <x-guest-layout>
-    {{-- <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block"
+    {{-- <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block m-2"
         alt="Responsive image"> --}}
     <x-auth-card>
         

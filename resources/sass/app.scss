@@ -47,7 +47,7 @@
 .pMain {
     color: $textColor;
     font-size: 3vw;
-    text-align: justify;
+    text-align: center;
     padding: 0.5rem;
     margin: 1rem;
     font-family: $contentFont;
@@ -138,7 +138,7 @@
 
 // NINA CLASS
 
-.wir {
+.ich {
     color: rgb(10, 71, 77);
     font-size: 1.8vw;
     text-align: center;
@@ -147,7 +147,7 @@
     font-family: $contentFont;
 }
 
-.wir_1 {
+.ich_1 {
     color: rgb(10, 71, 77);
     font-size: 1.8vw;
     text-align: center;
@@ -178,12 +178,13 @@
     height: 20vh;
 }
 
+
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
     .pMain {
         color: $textColor;
         font-size: 1.8vw;
-        text-align: justify;
+        text-align: center;
         padding: 0.5rem;
         margin: 3rem;
         font-family: $contentFont;

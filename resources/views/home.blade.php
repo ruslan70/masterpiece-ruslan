@@ -4,7 +4,7 @@
 @section('header')
     <header>
 
-        <img src="{{ asset('img/foto-ruslan-2.png') }}" class="img-fluid rounded mx-auto d-block"
+        <img src="{{ asset('img/foto-ruslan-2.png') }}" class="img-fluid rounded mx-auto d-block m-2"
             alt="Responsive image">
 
         <h1 class="title_header">Hallo, ich bin Ruslan Khatuev,<br> Web Developer aus Zürich</h1>

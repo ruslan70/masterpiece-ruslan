@@ -13,7 +13,7 @@
     </div>
     @auth
         <div class="postDetailsBox">
-            <h3 class="title_header"><strong> LEAVE YOUR COMMENTS </strong></h3>
+            <h3 class="title_header"><strong> HINTERLASSEN SIE IHRE KOMMENTARE </strong></h3>
             <form action="/postDetail" method="post">
 
                     <!-- hidden field holding message->id to remember, which message
@@ -25,7 +25,7 @@
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="{{Auth::user()->name}}" readonly>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us what you think</label>
+                    <label for="exampleFormControlTextarea1" class="form-label text-white">Sag mir, was du denkst</label>
                     <textarea  name="comment" class="form-control" id="exampleFormControlTextarea1" rows="5" 
                     placeholder="Write an amazing comment"></textarea>
                    
@@ -64,7 +64,7 @@
                 @endauth
             @endforeach
         @else
-            <h3 class="title_header liauthor text-center">♥ we don't have any comments to show ... yet !</h3>
+            <h3 class="title_header liauthor text-center">Wir haben keine Kommentare zu zeigen ... noch nicht !</h3>
         @endif
 
 
