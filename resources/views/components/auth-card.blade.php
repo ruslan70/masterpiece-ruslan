@@ -1,6 +1,6 @@
 <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 body_color">
     <div>
-        <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block"
+        <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block m-2"
         alt="Responsive image">
     </div>
 
