@@ -178,7 +178,9 @@
     height: 20vh;
 }
 
-
+// .nav-wrap{
+//     justify-content:space-between !important;
+// }
 /* Desktop adjustments*/
 @media screen and (min-width: 992px) {
     .pMain {
@@ -190,6 +192,9 @@
         font-family: $contentFont;
     }
 
+    #navbarNav{
+            margin-left: 300px;
+        }
     .cardBoxStyle {
         margin: 0.5rem;
         width: 23vw;
@@ -239,4 +244,8 @@
     .imgSize {
         height: 21vh;
     }
+
+    // #navbarNav{
+    //     margin-left: 300px;
+    // }
 }
