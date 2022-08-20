@@ -47,15 +47,17 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="/dashboard">Dashboard</a>
                     </li>
-                </ul>
+                
 
-
-                <a class="nav-link text-white" href="{{ route('logout') }}"
-                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            @endauth
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ route('logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+                @endauth
+            </ul>
         </div>
     </div>
 </nav>
