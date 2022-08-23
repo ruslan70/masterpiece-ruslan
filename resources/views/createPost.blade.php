@@ -9,7 +9,7 @@
         <div class="postDetailsBox">
             <br>
             <h1 class="title_header"><strong> Eigenen Beitrag erstellen </strong></h1>
-            <p class="pMain">Hier können Sie Ihren eigenen Beitrag erstellen, damit später Leute darüber diskutieren können</p>
+            <p class="pMain">Hier können Sie Ihren eigenen Beitrag erstellen, damit später Interessierende darüber diskutieren können</p>
         </div>
 
         <div class="postDetailsBox">
@@ -41,8 +41,8 @@
             {{-- <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}" --}}
             {{-- class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image"> --}}
 
-            <h2 class="title_header"><strong>Zuerst müssen Sie eingeloggt sein!</strong></h2>
-            <h3 class="title_header">Wir laden Sie herzlich ein, sich anzumelden</h3>
+            <h2 class="title_header"><strong>Um einen Post zu erfassen, müssen Sie zuerst eingeloggt sein!</strong></h2>
+            <h3 class="title_header">Ich lade Sie herzlich ein, sich anzumelden</h3>
 
             <a href="/register" class=" title_header btn buttonCustom text-white">Register</a>
 
