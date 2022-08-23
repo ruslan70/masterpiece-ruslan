@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <a class="navbar-brand nav_text text-white" href="/"><img src={{ asset('img/Logo-1.png') }}
                 width="30" height="30" class="d-inline-block align-top" alt="">
-            Rusaln Khatuev | Web Developer</a>
+                 Ruslan   Khatuev  |  Web   Developer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

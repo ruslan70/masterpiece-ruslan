@@ -8,8 +8,8 @@
             alt="Responsive image">
 
         <h1 class="title_header">Hallo, ich bin Ruslan Khatuev,<br> Web Developer aus Zürich</h1>
-
-        <p class="pMain bg-primary">Als Flüchtling in die Schweiz gekommen, 
+        
+        <p class="pMain bg-opacity-10 bg-primary">Als Flüchtling in die Schweiz gekommen, 
             konnte ich nicht auf meinem ursprünglichen Beruf als Arzt arbeiten und habe mich daher gründlich neu orientiert. 
             In einem herausfordernden Prozess und durch verschiedene gemeinnützige Tätigkeiten 
             durfte ich insbesondere meine Fähigkeiten im Umgang mit verschiedenen Informationstechniken und Technologien entdecken. </p>
