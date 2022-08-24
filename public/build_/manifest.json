@@ -1,0 +1,19 @@
+{
+  "public/img/template1_bg.jpg": {
+    "file": "assets/template1_bg.abf9acba.jpg",
+    "src": "public/img/template1_bg.jpg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.57350306.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app.4eda8552.css"
+    ]
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app.4eda8552.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  }
+}

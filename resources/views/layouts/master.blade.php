@@ -19,7 +19,7 @@
     <div class="container-fluid">
         <a class="navbar-brand nav_text text-white" href="/"><img src={{ asset('img/Logo-1.png') }}
                 width="30" height="30" class="d-inline-block align-top" alt="">
-            Rusaln Khatuev | Web Developer</a>
+                 Ruslan   Khatuev  |  Web   Developer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,15 +47,17 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="/dashboard">Dashboard</a>
                     </li>
-                </ul>
+                
 
-
-                <a class="nav-link text-white" href="{{ route('logout') }}"
-                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            @endauth
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{{ route('logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </li>
+                @endauth
+            </ul>
         </div>
     </div>
 </nav>

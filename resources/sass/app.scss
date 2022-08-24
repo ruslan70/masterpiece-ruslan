@@ -21,6 +21,10 @@
     background-color: $navColor;
 }
 
+.navbar-nav {
+    font-size: 18px;
+}
+
 .body_color {
     background-color: $backgroundColor;
     // min-height: 90vh;
@@ -192,9 +196,12 @@
         font-family: $contentFont;
     }
 
+
     #navbarNav{
-            margin-left: 300px;
+            margin-left: 200px;
         }
+
+
     .cardBoxStyle {
         margin: 0.5rem;
         width: 23vw;
@@ -244,6 +251,8 @@
     .imgSize {
         height: 21vh;
     }
+
+    
 
     // #navbarNav{
     //     margin-left: 300px;

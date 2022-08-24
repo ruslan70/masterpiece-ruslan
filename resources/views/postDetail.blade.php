@@ -41,6 +41,7 @@
 
     <h3 class="title_header">DEINE GEDANKEN</h3>
 
+
     <section class="postDetailsBox">
 
         @if (count($post->comments) >= 1)
@@ -62,9 +63,27 @@
 
                     </form>
                 @endauth
+
+               
             @endforeach
         @else
-            <h3 class="title_header liauthor text-center">Wir haben keine Kommentare zu zeigen ... noch nicht !</h3>
+            <h3 class="title_header liauthor text-center">Es gibt keine Kommentare zu zeigen ... noch nicht !</h3>
+            @guest
+                <div class="postDetailsBox text-center">
+
+                    <!-- <div class="createGuest"> -->
+
+                        <h2 class="title_header">Um ein Kommentar zu erfassen, müssen Sie zuerst eingeloggt sein!</h2>
+                        <h3 class="title_header">Ich lade Sie herzlich ein, sich anzumelden</h3>
+                       
+                    
+                        <a href="/register" class=" title_header btn buttonCustom text-white">Register</a>
+                    
+                      
+                    <!-- </div> -->
+                </div>
+
+            @endguest
         @endif
 
 
