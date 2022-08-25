@@ -31,7 +31,7 @@
 }
 
 .bodyIMG{
-    background-image: url('/img/template1_bg.jpg');
+    background-image: url('/img/Download.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,6 +116,7 @@
 .liauthor{
     @extend .liComment;
     font-style: italic;
+    list-style: none;
 }
 
 .createGuest{
