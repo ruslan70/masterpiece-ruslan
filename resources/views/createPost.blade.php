@@ -15,24 +15,24 @@
         <div class="postDetailsBox">
             <form action="/" method="post">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-white">Title of the post</label>
+                    <label for="exampleFormControlInput1" class="form-label">Titel vom Beitrag</label>
                     <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="">
                 </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label text-white">Author</label>
-            <input type="text" name="author" class="form-control" id="exampleFormControlInput1" placeholder="{{Auth::user()->name}}" readonly>
-</div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label text-white">Hier sollten Sie Ihren Beitrag schreiben</label>
+                    <label for="exampleFormControlInput1" class="form-label">Autor</label>
+                    <input type="text" name="author" class="form-control" id="exampleFormControlInput1" placeholder="{{Auth::user()->name}}" readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Hier sollten Sie Ihren Beitrag schreiben</label>
                     <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="5"
-                        placeholder="Write an amazing comment"></textarea>
+                                    placeholder="Write an amazing comment"></textarea>
                 </div>
                 @csrf
-                <button class="btn buttonCustom text-white">Submit</button>
+                <button class="btn buttonCustom text-white"><dt>Submit</dt></button>
 
             </form>
-        @endauth
-    </div>
+        </div>
+    @endauth
     @guest
 
         <div class="createGuest">

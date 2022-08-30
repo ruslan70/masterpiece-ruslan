@@ -72,6 +72,7 @@
 @yield ('register')
 @yield ('aboutme')
 @yield ('postDetail')
+@yield ('post1')
 @yield ('editComment')
 @yield ('createpost')
 @yield ('dashboard')
