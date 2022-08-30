@@ -10,6 +10,33 @@
         <h2 class="title_header"><strong>{{ $post->title }}</strong></h2>
         <h3 class="title_header">{{ $post->author }}</h3>
         <p class="pMain">{{ $post->content }}</p>
+        <h2 class="title_header">Site Details:</h2>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+    @foreach($photos as $photo)
+        <div class="carousel-item active">
+            
+                <h3 class="title_header">{{$photo->title}}</h3>
+                
+                <img src = "data:image/png;base64,{{ base64_encode($photo->photo) }}" 
+                    class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
+                
+            
+        </div>
+    @endforeach
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>          
+        
+        
     </div>
     @auth
         <div class="postDetailsBox">
@@ -39,7 +66,7 @@
     @endauth
     </section>
 
-    <h3 class="title_header">DEINE GEDANKEN</h3>
+    <!-- <h3 class="title_header">KOMMENTARE:</h3> -->
 
 
     <section class="postDetailsBox">
@@ -67,7 +94,7 @@
                
             @endforeach
         @else
-            <h3 class="title_header liauthor text-center">Es gibt keine Kommentare zu zeigen ... noch nicht !</h3>
+            <h3 class="title_header liauthor text-black text-center">Es gibt keine Kommentare zu zeigen ... noch nicht !</h3>
             @guest
                 <div class="postDetailsBox text-center">
 

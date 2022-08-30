@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\PhotoController;
 
 
 
@@ -63,7 +64,7 @@ Route::post('/update/{id}', [BlogController::class, 'update']);
 
 Route::get('/postdetail/{id}', [BlogController::class, 'postDetails']);
 
-Route::get('/postdetail/{id}', [BlogController::class, 'details']);
+// Route::get('/postdetail/{id}', [BlogController::class, 'details']);
 
 Route::post('/postDetail', [CommentController::class, 'addComment']);
 
@@ -71,7 +72,7 @@ Route::delete('/comment/{id}', [CommentController::class, 'delete']);
 
 // Route::delete('/postDetail/{id}', [CommentController::class, 'destroy']);
 
-
+// Route::get('post1/{id}', [PhotoController::class, 'show']);
 
 
 //protecting a group of Routes

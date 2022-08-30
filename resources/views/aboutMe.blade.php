@@ -6,7 +6,7 @@
 
         <h2 class="title_header"><strong> About me: </strong></h2>
         <!-- <h3 class="ich"><strong><i><ins>Ruslan</ins></i></strong></h3> -->
-        <p class="pMain">Ich bin ein Mensch, der grosse Ideen hat.<br>
+        <p class="pMain text-black">Ich bin ein Mensch, der grosse Ideen hat.<br>
             Ich will gemeinsam mit meinen LeserenInnen
             Gedanken in erstklassige digitale Lösungen verwandeln.
         </p>

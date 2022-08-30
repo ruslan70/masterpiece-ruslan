@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Photo;
 use Illuminate\Support\Facades\Auth; 
 
 
@@ -19,12 +20,18 @@ class BlogController extends Controller
     
 
     public function postDetails($id) {
- 
+        $posts= Post::find($id);
 
-       
-        $posts= Post ::find($id);
- 
-        return view('postDetail', ['post' => $posts]);
+        $photoId=1;
+        $photo = Photo::findOrFail($photoId);
+        
+        $photos=Photo::where('postId', $id)->get();
+        
+        return view('postDetail', ['post' => $posts,'photos' => $photos]);
+
+        
+        
+        
     
 
 
