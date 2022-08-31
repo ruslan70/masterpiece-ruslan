@@ -11,7 +11,7 @@
         <h3 class="title_header">{{ $post->author }}</h3>
         <p class="pMain">{{ $post->content }}</p>
         <h2 class="title_header">Site Details:</h2>
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
     
     <div class="carousel-inner">
     @foreach($photos as $photo)
