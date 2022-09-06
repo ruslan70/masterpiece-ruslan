@@ -3,8 +3,8 @@
     
 
     <!-- Responsive Navigation Menu -->
-    <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden bg-white">
-        <div class="pt-4 pb-3 space-y-1 text-center">
+    <div :class="{ 'block': open, 'hidden': !open }" class="hidden sm:hidden">
+        <div class="h5 pt-4 pb-3 space-y-1 text-center">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
@@ -14,10 +14,10 @@
         <div class="pt-4 pb-1 border-t border-gray-200">
             <div class="px-4 text-center">
                 <h5 class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</h5>
-                <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
+                <div class="h5 font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
             </div>
 
-            <div class="mb-3 mt-3 space-y-1 text-center">
+            <div class="h5 mb-3 mt-3 space-y-1 text-center">
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf

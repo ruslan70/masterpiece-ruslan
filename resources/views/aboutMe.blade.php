@@ -2,7 +2,7 @@
 
 @section('aboutme')
     <div class="postDetailsBox">
-        <img src="{{ asset('img/logo-name.png') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
+        <img src="{{ asset('img/logo-name-blue-sky.png') }}" class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
 
         <h2 class="title_header"><strong> About me: </strong></h2>
         <!-- <h3 class="ich"><strong><i><ins>Ruslan</ins></i></strong></h3> -->

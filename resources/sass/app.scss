@@ -25,13 +25,15 @@
     font-size: 18px;
 }
 
+
+
 .body_color {
     background-color: $backgroundColor;
     // min-height: 90vh;
 }
 
 .bodyIMG{
-    background-image: url('/img/Download.jpeg');
+    background-image: url('/img/blue-sky.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +91,8 @@
 }
 
 .postDetailsBox {
-    width: 90vw;
+    font-size: larger;
+    width: 70vw;
     margin: auto;
 }
 
@@ -126,7 +129,7 @@
     flex-direction: column;
     align-items: center;
 }
-// BREEZE CLASS
+
 .text-white {
     color: $textColor;
 }
@@ -141,7 +144,7 @@
     background-size: cover;
 }
 
-// NINA CLASS
+
 
 .ich {
     color: rgb(10, 71, 77);
@@ -183,6 +186,12 @@
     height: 20vh;
 }
 
+#max_size {
+    height: 19cm;
+    width: 22cm;
+ 
+ }
+
 // .nav-wrap{
 //     justify-content:space-between !important;
 // }
@@ -198,9 +207,15 @@
     }
 
 
+
     #navbarNav{
             margin-left: 200px;
+            
         }
+
+    .nav-item {
+            margin-right: 90px;
+    }
 
 
     .cardBoxStyle {
@@ -210,7 +225,7 @@
     }
 
     .postDetailsBox {
-        width: 70vw;
+        width: 50vw;
         margin: auto;
     }
 
@@ -246,6 +261,12 @@
     .imgSize{
         height: 25vh;
     }
+
+   
+}
+
+.min_height{
+    min-height: 25vw;
 }
 
 @media screen and (min-width: 994px) and (max-width: 1190px) {
@@ -253,7 +274,11 @@
         height: 21vh;
     }
 
-    
+    #max_size {
+        height: 19cm;
+        width: 22cm;
+     
+     }
 
     // #navbarNav{
     //     margin-left: 300px;

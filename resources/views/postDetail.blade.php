@@ -3,6 +3,7 @@
 
 {{-- HERE GOES THE CONTENT --}}
 @section('postDetail')
+<h3 class="title_header">Es ist alles zu kommentieren: Kode, Design, Funktionalität</h3>
     <div class="postDetailsBox">
         <img src="data:image/jpg;base64,{{ chunk_split(base64_encode($post->postPic)) }}"
             class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
@@ -11,30 +12,38 @@
         <h3 class="title_header">{{ $post->author }}</h3>
         <p class="pMain">{{ $post->content }}</p>
         <h2 class="title_header">Site Details:</h2>
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    
-    <div class="carousel-inner">
-    @foreach($photos as $photo)
-        <div class="carousel-item active">
-            
-                <h3 class="title_header">{{$photo->title}}</h3>
+        
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+        
+        <div class="carousel-inner">
+        <?php
+            $isActive = 'active';
+        ?>
+        @foreach($photos as $photo)
+            <div class="carousel-item {{$isActive}}">
                 
-                <img src = "data:image/png;base64,{{ base64_encode($photo->photo) }}" 
-                    class="img-fluid rounded mx-auto d-block m-2" alt="Responsive image">
+                    <h3 class="title_header">{{$photo->title}}</h3>
+                    
+                    <img src = "data:image/png;base64,{{ base64_encode($photo->photo) }}" 
+                        class="img-fluid rounded mx-auto d-block m-4" id="max_size" alt="Responsive image">
+                    
                 
-            
+            </div>
+        <?php
+            $isActive = '';
+        ?>
+        @endforeach
         </div>
-    @endforeach
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-    </button>
-</div>          
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>          
         
         
     </div>
@@ -58,7 +67,7 @@
                    
                 </div>
                 @csrf
-                <button type="submit" class="btn buttonCustom text-white">Submit</button>
+                <button type="submit" class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit</button>
             </form> 
         </div>
     
@@ -83,10 +92,10 @@
                     <form action="/comment/{{$comment->id}}" method="post">
                         @csrf
                         @method('delete')
-                        {{-- <button class="btn buttonCustom text-white" type="submit">Edit</button> --}}
+                        {{-- <button class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Edit</button> --}}
                         {{-- <a href="editComment" class="btn buttonCustom text-white">Edit</a> --}}
                         <button onclick="return confirm('Do You Really Want to Delete The post')"
-                            class="btn buttonCustom text-white">Delete</button>
+                            class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Delete</button>
 
                     </form>
                 @endauth
@@ -94,17 +103,17 @@
                
             @endforeach
         @else
-            <h3 class="title_header liauthor text-black text-center">Es gibt keine Kommentare zu zeigen ... noch nicht !</h3>
+            <h3 class="title_header liauthor text-white text-center">Es gibt keine Kommentare zu zeigen ... noch nicht !</h3>
             @guest
                 <div class="postDetailsBox text-center">
 
                     <!-- <div class="createGuest"> -->
 
                         <h2 class="title_header">Um ein Kommentar zu erfassen, müssen Sie zuerst eingeloggt sein!</h2>
-                        <h3 class="title_header">Ich lade Sie herzlich ein, sich anzumelden</h3>
+                        <h3 class="title_header pb-5">Ich lade Sie herzlich ein, sich anzumelden</h3>
                        
                     
-                        <a href="/register" class=" title_header btn buttonCustom text-white">Register</a>
+                        <a href="/register" class="h3 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Register</a>
                     
                       
                     <!-- </div> -->

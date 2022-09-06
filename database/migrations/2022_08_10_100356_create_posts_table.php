@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('author');
             $table->string('title');
             $table->text('content');
+            $table->text('link')->nullable();
             $table->timestamps();
             $table->binary('postPic')->nullable();
         });

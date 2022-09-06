@@ -32,7 +32,7 @@
                         <h6 class="card-subtitle mb-2 fw-lighter text-black">{{ $post->created_at }}</h6>
                     </div>
                     <p class="card-text cTextElip text-black">{{ $post->content }}</p>
-                    <a href="/postdetail/{{ $post->id }}" class="btn buttonCustom text-white">Full post</a>
+                    <a href="/postdetail/{{ $post->id }}" class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Full post</a>
                 </div>
             </div>
         @endforeach
