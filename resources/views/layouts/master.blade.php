@@ -27,31 +27,31 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-white">
                 <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                    <a class="nav-link active text-white " aria-current="page" href="/">HOME</a>
                 </li>
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/login">Log in</a>
+                        <a class="nav-link text-white" href="/login">LOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/register">Register</a>
+                        <a class="nav-link text-white" href="/register">REGISTER</a>
                     </li>
                 @endguest
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/aboutme">About me</a>
+                    <a class="nav-link text-white" href="/aboutme">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/createpost">Create a post</a>
+                    <a class="nav-link text-white" href="/createpost">CREATE A POST</a>
                 </li>
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/dashboard">Dashboard</a>
+                        <a class="nav-link text-white" href="/dashboard">DASHBOARD</a>
                     </li>
                 
 
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('logout') }}"
-                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">LOGOUT</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>

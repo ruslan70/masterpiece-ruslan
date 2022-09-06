@@ -7,7 +7,7 @@ use App\Models\Post;
 use App\Models\Comment;
 use Illuminate\Support\Facades\Auth;
 
-class CommentController extends ContropostIdller
+class CommentController extends Controller
 {
     function addComment(Request $request) {
   

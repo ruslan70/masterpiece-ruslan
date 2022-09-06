@@ -19,6 +19,7 @@ return new class extends Migration
             $table->binary('photo');
             $table->timestamps();
             $table->id('postId');
+            $table->string('link');
         });
     }
 
