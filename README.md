@@ -1,3 +1,26 @@
+### Projektbeschreibung
+
+Dieses Projekt wird die Abschlussarbeit des Kurses sein - auch als attraktives Stück für Ihr Portfolio gedacht, die meine Fähigkeiten als Webentwickler zeigt.
+Es wurden zwei verschiedene Technologien für zwei verschidene Webseiten benutzt: Laravel und Homepagebaukasten WIX  auf dem Cloudprinzip
+Die Wix-Seite ist ein Portfolio mit gedacht, auf der ich mich und meine Projekte vorstellen kann (mit der Anfrage der Unterlagen für Arbeitgeber)
+Dieses Repo ist ein  Laravel Blog,der allein für die Vorstellung und Diskussion meiner Projekte gedacht ist.
+
+### Installationsskript 
+
+
+### Links zu 
+    # Taiga: https://tree.taiga.io/project/ruslan70-masterpiece/issues?order_by=-type
+    # Figma: https://www.figma.com/file/TyjrOwXfaMTm2d0HSGGxxZ/Untitled?node-id=0%3A1
+    # Solo Contract: https://docs.google.com/document/d/1Kq4P1OBw6kgJzzoiam9rAVx583fsa6SA/edit?usp=sharing&ouid=112391669010473700714&rtpof=true&sd=true
+    # Forschungsseiten: https://laravel.com/docs/9.x/vite#installation
+                        https://www.w3schools.com/default.asp
+                        https://tailwindcss.com/
+                        https://laracasts.com/
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
