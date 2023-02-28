@@ -1,6 +1,6 @@
 ### Projektbeschreibung
 
-Dieses Projekt wird die Abschlussarbeit des Kurses sein - auch als attraktives Stück für Ihr Portfolio gedacht, die meine Fähigkeiten als Webentwickler zeigt.
+Dieses Projekt wird die Abschlussarbeit des Kurses sein - auch als attraktives Stück für mein Portfolio gedacht, die meine Fähigkeiten als Webentwickler zeigt.
 Es wurden zwei verschiedene Technologien für zwei verschidene Webseiten benutzt: Laravel und Homepagebaukasten WIX  auf dem Cloudprinzip
 Die Wix-Seite ist ein Portfolio mit gedacht, auf der ich mich und meine Projekte vorstellen kann (mit der Anfrage der Unterlagen für Arbeitgeber)
 Dieses Repo ist ein  Laravel Blog,der allein für die Vorstellung und Diskussion meiner Projekte gedacht ist.
